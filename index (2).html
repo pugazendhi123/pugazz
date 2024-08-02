@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIME TABLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+            min-width: 400px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color:#0e3b6;
+            color:#a00b0;
+        }
+        td {
+            background-color: #fff;
+            color: #333;
+        }
+        .highlight {
+            background-color:#f8f9fa;
+            font-weight: bold;
+        }
+        .special {
+            background-color:#18d3;
+            font-weight: bold;
+        }
+        .break {
+            background-color:#a0b69e;
+        }
+        .lunch {
+            background-color:#a0b69e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>TIME TABLE</h1>
+    <table>
+        <tr>
+            <th>Day / Period</th>
+            <th>I<br>8:05-8:55</th>
+            <th>II<br>8:55-9:45</th>
+            <th> 9:45-10:00</th>
+            <th>III<br>10:00-10:50</th>
+            <th>IV<br>10:50-11:40</th>
+            <th>11:40-12:20</th>
+            <th>V<br>12:20-1:05</th>
+            <th>VI<br>1:05-1:50</th>
+            <th>1:50-2:00</th>
+            <th>VII<br>2:00-2:45</th>
+            <th>VIII<br>2:45-3:30</th>
+        </tr>
+        <tr>
+            <td class="highlight">Monday</td>
+            <td>PS</td>
+            <td>TQM</td>
+            <td rowspan="6" class="break">BREAK</td>
+            <td colspan="2" class="special">WT/MPMC LAB</td>
+            <td rowspan="6" class="lunch">LUNCH</td>
+            <td>CN</td>
+            <td>PS</td>
+            <td rowspan="6" class="break">BREAK</td>
+            <td colspan="2" class="special">VER/PET</td>
+        </tr>
+        <tr>
+            <td class="highlight">Tuesday</td>
+            <td colspan="2" class="special">CN/WT LAB</td>
+            <td>CN</td>
+            <td>PS</td>
+            <td>RET</td>
+            <td>MPMC</td>
+            <td>TQM</td>
+            <td>RET</td>
+        </tr>
+        <tr>
+            <td class="highlight">Wednesday</td>
+            <td>CN</td>
+            <td>MPMC</td>
+            <td>RET</td>
+            <td>LIB</td>
+            <td colspan="2" class="special">PPT</td>
+            <td>WT</td>
+            <td>PS</td>
+        </tr>
+        <tr>
+            <td class="highlight">Thursday</td>
+            <td>RET</td>
+            <td>PS</td>
+            <td>TQM</td>
+            <td>WT</td>
+            <td>MPMC</td>
+            <td>TQM</td>
+            <td>RET</td>
+            <td>MPMC</td>
+        </tr>
+        <tr>
+            <td class="highlight">Friday</td>
+            <td>WT</td>
+            <td>CN</td>
+            <td colspan="2" class="special">PPT</td>
+            <td colspan="2" class="special">MPMC/CN LAB</td>
+            <td>MPMC</td>
+            <td>WT</td>
+        </tr>
+    </table>
+</body>
+</html>
